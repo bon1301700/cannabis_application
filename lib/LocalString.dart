@@ -7,10 +7,10 @@ class LocalString extends Translations {
         'en_US': {
           'changelang': 'Change Language',
           'title': 'Cannabis Health Check App',
-          'mycannabis': 'My cannabis species',
-          'species': 'species Thai Stick',
+          'mycannabis': 'My Cannabis Species',
+          'species': 'Species Thai Stick',
           'about': 'About Your Cannabis',
-          'treat': 'cannabis treatment',
+          'treat': 'Cannabis Treatment',
           'sc': 'Scan',
           'titleabout': 'About Your Cannabis',
           'cannabis spic': 'Canabis \nSpecies \nThai stic',
