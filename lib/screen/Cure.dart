@@ -28,7 +28,7 @@ class _CureState extends State<Cure> {
             ),
           ),
         ),
-        centerTitle: false,
+        centerTitle: true,
         elevation: 0,
       ),
       body: SafeArea(

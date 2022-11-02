@@ -27,7 +27,7 @@ class _AboutState extends State<About> {
               ),
             ),
           ),
-          centerTitle: false,
+          centerTitle: true,
           elevation: 0,
         ),
         body: SafeArea(
