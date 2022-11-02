@@ -47,7 +47,7 @@ class _CameraScreenState extends BaseState<CameraScreen, CameraViewModel>
 
   void initCamera() {
     _cameraController = CameraController(
-        listCamera[viewModel.cameraIndex()], ResolutionPreset.low);
+        listCamera[viewModel.cameraIndex()], ResolutionPreset.max);
     _initializeControllerFuture =
         _cameraController.initialize().then((value) => {
               setState(() {

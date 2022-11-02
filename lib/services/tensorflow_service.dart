@@ -21,7 +21,7 @@ class TensorFlowService {
         imageStd: 127.5,
         rotation: 90,
         numResults: 4,
-        threshold: 0.1,
+        threshold: 0.5,
         asynch: true);
     return recognitions;
   }
@@ -30,7 +30,7 @@ class TensorFlowService {
     var recognitions = await Tflite.runModelOnImage(
       path: image.path,
       numResults: 4,
-      threshold: 0.1,
+      threshold: 0.5,
       imageMean: 127.5,
       imageStd: 127.5,
     );

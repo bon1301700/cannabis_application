@@ -128,7 +128,7 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
                   child: Text(
                     _textDisplay(label),
                     style: AppTextStyles.regularTextStyle(
-                        color: _textStyleColor(label), fontSize: 12),
+                        color: _textStyleColor(label), fontSize: 25),
                   ),
                 ),
               ),
@@ -139,7 +139,7 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
                   child: Text(
                     _textAlertDisplay(),
                     style: AppTextStyles.regularTextStyle(
-                        color: _textStyleColor(label), fontSize: 12),
+                        color: _textStyleColor(label), fontSize: 25),
                   ),
                 ),
               ),

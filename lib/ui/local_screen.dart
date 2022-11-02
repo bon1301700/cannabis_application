@@ -114,14 +114,25 @@ class _LocalScreenState extends BaseState<LocalScreen, LocalViewModel> {
               SizedBox(
                 height: 20,
               ),
-              Text(
-                viewModel.getTextDetected(),
-                style: AppTextStyles.regularTextStyle(
-                    color: viewModel.getTextDetected() == AppStrings.healty
-                        ? AppColors.green
-                        : AppColors.red,
-                    fontSize: AppFontSizes.medium),
-              )
+              Align(
+                  alignment: Alignment.center,
+                  child: Container(
+                      color: AppColors.black,
+                      child: Text(
+                        viewModel.getTextDetected(),
+                        style: AppTextStyles.mediumTextStyle(
+                            color:
+                                viewModel.getTextDetected() == AppStrings.healty
+                                    ? AppColors.green
+                                    : viewModel.getTextDetected() ==
+                                            AppStrings.phase1
+                                        ? AppColors.blue
+                                        : viewModel.getTextDetected() ==
+                                                AppStrings.phase2
+                                            ? AppColors.yellow
+                                            : AppColors.red,
+                            fontSize: 25),
+                      )))
             ],
           ),
         ),
