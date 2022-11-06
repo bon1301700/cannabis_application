@@ -1,10 +1,12 @@
 import 'package:cannabis_aplication/ui/local_screen.dart';
 import 'package:flutter/material.dart';
 import 'screen/About.dart';
+import 'screen/Aboutnew.dart';
 import 'screen/Cure.dart';
 import 'screen/Scan.dart';
 import 'package:get/get.dart';
 import 'package:cannabis_aplication/ui/camera_screen.dart';
+import 'package:page_transition/page_transition.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
@@ -185,8 +187,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         ElevatedButton(
                           onPressed: () => Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) => About())),
+                              PageTransition(
+                                  type: PageTransitionType.scale,
+                                  alignment: Alignment.bottomCenter,
+                                  duration: Duration(milliseconds: 600),
+                                  reverseDuration: Duration(milliseconds: 600),
+                                  child: Aboutnew())),
                           style: ElevatedButton.styleFrom(
                             primary: Colors.green,
                             minimumSize: Size(375, 40),
@@ -208,8 +214,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         ElevatedButton(
                           onPressed: () => Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) => Cure())),
+                              PageTransition(
+                                  type: PageTransitionType.scale,
+                                  alignment: Alignment.bottomCenter,
+                                  duration: Duration(milliseconds: 600),
+                                  reverseDuration: Duration(milliseconds: 600),
+                                  child: Cure())),
                           style: ElevatedButton.styleFrom(
                             primary: Colors.green,
                             minimumSize: Size(375, 40),
@@ -231,9 +241,12 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         ElevatedButton(
                           onPressed: () => Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (BuildContext context) =>
-                                      LocalScreen())),
+                              PageTransition(
+                                  type: PageTransitionType.scale,
+                                  alignment: Alignment.bottomCenter,
+                                  duration: Duration(milliseconds: 600),
+                                  reverseDuration: Duration(milliseconds: 600),
+                                  child: LocalScreen())),
                           style: ElevatedButton.styleFrom(
                             primary: Colors.green,
                             minimumSize: Size(375, 40),

@@ -59,12 +59,12 @@ class _LocalScreenState extends BaseState<LocalScreen, LocalViewModel> {
               ),
               elevation: 0.0,
               centerTitle: true,
-              backgroundColor: AppColors.yellow,
+              backgroundColor: Color(0xffA2D43D),
               title: Text(
                 'title_gallery'.tr,
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  color: Colors.green,
+                  color: Colors.white,
                   fontSize: 22,
                 ),
               ),
@@ -87,8 +87,8 @@ class _LocalScreenState extends BaseState<LocalScreen, LocalViewModel> {
       height: MediaQuery.of(context).size.height,
       width: double.infinity,
       decoration: BoxDecoration(
-          color: AppColors.yellow.withOpacity(0.4),
-          border: Border.all(color: AppColors.yellow, width: 5)),
+          color: AppColors.green.withOpacity(0.9),
+          border: Border.all(color: Color(0xffA2D43D), width: 5)),
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Container(
@@ -102,7 +102,7 @@ class _LocalScreenState extends BaseState<LocalScreen, LocalViewModel> {
                       child: Text(
                         'text_in_gallery'.tr,
                         style: AppTextStyles.regularTextStyle(
-                            color: AppColors.green,
+                            color: AppColors.white,
                             fontSize: AppFontSizes.medium),
                       ),
                     )

@@ -1,4 +1,3 @@
-import 'package:cannabis_aplication/app/app_router.dart';
 import 'package:cannabis_aplication/services/navigation_service.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
