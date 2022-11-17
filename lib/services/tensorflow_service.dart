@@ -6,7 +6,7 @@ class TensorFlowService {
   loadModel() async {
     Tflite.close();
     await Tflite.loadModel(
-        model: "assets/model/tf_lite_model(CNN_30).tflite",
+        model: "assets/model/model_20_add_unknow_second.tflite",
         labels: "assets/model/labels.txt");
   }
 
@@ -17,8 +17,8 @@ class TensorFlowService {
         }).toList(),
         imageHeight: image.height,
         imageWidth: image.width,
-        imageMean: 127.5,
-        imageStd: 127.5,
+        imageMean: 225,
+        imageStd: 225,
         rotation: 90,
         numResults: 4,
         threshold: 0.5,

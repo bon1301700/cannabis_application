@@ -130,7 +130,10 @@ class _LocalScreenState extends BaseState<LocalScreen, LocalViewModel> {
                                         : viewModel.getTextDetected() ==
                                                 AppStrings.phase2
                                             ? AppColors.yellow
-                                            : AppColors.red,
+                                            : viewModel.getTextDetected() ==
+                                                    AppStrings.unknow
+                                                ? AppColors.grey
+                                                : AppColors.red,
                             fontSize: 25),
                       )))
             ],

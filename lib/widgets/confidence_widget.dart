@@ -54,6 +54,9 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
       final String fourLabel = divisions.first['label'] as String;
       final double fourConfidence = divisions.first['confidence'] as double;
 
+      final String fifthLabel = divisions.first['label'] as String;
+      final double fifthConfidence = divisions.first['confidence'] as double;
+
       if (firstConfidence > secondConfidence) {
         label = firstLabel;
         confidence = firstConfidence;
@@ -65,9 +68,13 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
       if (threeConfidence > fourConfidence) {
         label = threeLabel;
         confidence = threeConfidence;
-      } else {
+      }
+      if (fourConfidence > fifthConfidence) {
         label = fourLabel;
         confidence = fourConfidence;
+      } else {
+        label = fifthLabel;
+        confidence = fifthConfidence;
       }
     }
     if (divisions.length == 1) {
@@ -91,6 +98,9 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
     }
     if (label == AppStrings.phase3) {
       return AppColors.red;
+    }
+    if (label == AppStrings.unknow) {
+      return AppColors.grey;
     }
     return AppColors.transparent;
   }
@@ -170,7 +180,10 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
     if (label == AppStrings.phase2) {
       return "${AppStrings.phase2} ${(confidence * 100).toStringAsFixed(0)}%";
     }
-    return "${AppStrings.phase3} ${(confidence * 100).toStringAsFixed(0)}%";
+    if (label == AppStrings.phase3) {
+      return "${AppStrings.phase3} ${(confidence * 100).toStringAsFixed(0)}%";
+    }
+    return "${AppStrings.unknow} ${(confidence * 100).toStringAsFixed(0)}%";
   }
 
   Color _textStyleColor(String label) {
@@ -183,6 +196,9 @@ class _ConfidenceWidgetState extends State<ConfidenceWidget> {
     if (label == AppStrings.phase2) {
       return AppColors.yellow;
     }
-    return AppColors.red;
+    if (label == AppStrings.phase3) {
+      return AppColors.red;
+    }
+    return AppColors.grey;
   }
 }

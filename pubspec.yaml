@@ -82,7 +82,8 @@ flutter:
     - assets/images/kulogo.png
     - assets/images/canabisss.png
     - assets/images/curecanabis.png
-    - assets/model/tf_lite_model(CNN_30).tflite
+   
+    - assets/model/model_20_add_unknow_second.tflite
     - assets/model/labels.txt
     - assets/fonts/
 

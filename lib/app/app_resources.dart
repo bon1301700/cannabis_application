@@ -70,6 +70,7 @@ class AppColors {
   static const Color green = Colors.green;
   static const Color blue = Colors.blue;
   static const Color black = Colors.black;
+  static const Color grey = Colors.grey;
   static const Color transparent = Colors.transparent;
 }
 
@@ -82,10 +83,15 @@ class AppImages {
 class AppStrings {
   AppStrings._();
 
-  static const String healty = "Healty";
-  static const String phase1 = "Phase1";
-  static const String phase2 = "Phase2";
-  static const String phase3 = "Phase3";
+  /* static const String early_p_def = "Early_P_Def";
+  static const String healthy_p = "Healthy_P ";
+  static const String late_p_def = "Late_P_Def";
+  static const String prog_p_def = "Prog_P_Def"; */
+  static const String healty = "Healthy_P";
+  static const String phase1 = "Early_P_Def";
+  static const String phase2 = "Late_P_Def";
+  static const String phase3 = "Prog_P_Def";
+  static const String unknow = "Unknow_P";
   static const String dontShake = "Don\'t Shake your mobile phone";
   static const String pickFromGallery = "Pick Image from gallery";
 

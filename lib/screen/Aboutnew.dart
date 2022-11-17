@@ -10,14 +10,7 @@ import 'package:flutter/material.dart';
 /* import 'Aboutdis.dart';
 import 'Aboutcom.dart'; */
 
-class Aboutnew extends StatefulWidget {
-  @override
-  _AboutnewState createState() => _AboutnewState();
-}
-
-class _AboutnewState extends State<Aboutnew> {
-  _AboutnewState();
-
+class Aboutnew extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -94,7 +87,6 @@ class _AboutnewState extends State<Aboutnew> {
                           onPressed: () => Navigator.of(context).push(
                               PageTransition(
                                   type: PageTransitionType.rightToLeft,
-                                  childCurrent: widget,
                                   duration: Duration(milliseconds: 600),
                                   reverseDuration: Duration(milliseconds: 600),
                                   child: About2())),
@@ -126,7 +118,6 @@ class _AboutnewState extends State<Aboutnew> {
                           onPressed: () => Navigator.of(context).push(
                               PageTransition(
                                   type: PageTransitionType.rightToLeft,
-                                  childCurrent: widget,
                                   duration: Duration(milliseconds: 600),
                                   reverseDuration: Duration(milliseconds: 600),
                                   child: About3())),
